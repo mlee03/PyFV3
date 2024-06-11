@@ -4,8 +4,8 @@ on:
       types: [opened, synchronize, reopened, ready_for_review, labeled, unlabeled]
 
 jobs:
-  all:
-    runs-on: ubuntu-latest
+  all_tests:
+  runs-on: ubuntu-latest
     strategy:
       matrix:
         python: [3.8.12, 3.11.7]
